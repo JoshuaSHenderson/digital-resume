@@ -1,18 +1,37 @@
-import { Button } from "@/components/ui/button"
+import { useState } from "react"
+import { FilterJobs } from "./components/filter-jobs"
+import { JobCard } from "./components/job-card"
 
-export function App() {
+import type { IJob } from "./components/types/interfaces"
+
+export interface AppProps {
+  jobs: IJob[]
+}
+
+export function App({ jobs }: AppProps) {
+  const [selectedJob, setSelectedJob] = useState<string>("all")
+
   return (
-    <div className="flex min-h-svh p-6">
-      <div className="flex max-w-md min-w-0 flex-col gap-4 text-sm leading-loose">
+    <div className="flex min-h-svh flex-col items-center justify-center p-6">
+      <div className="flex max-w-md min-w-0 flex-col items-center gap-4 text-sm leading-loose">
         <div>
-          <h1 className="font-medium">Project ready!</h1>
-          <p>You may now add components and start building.</p>
-          <p>We&apos;ve already added the button component for you.</p>
-          <Button className="mt-2">Button</Button>
+          <h1 className="text-center text-4xl">Joshua Henderson Resume</h1>
         </div>
-        <div className="font-mono text-xs text-muted-foreground">
-          (Press <kbd>d</kbd> to toggle dark mode)
-        </div>
+
+        <FilterJobs jobs={jobs} selectedJob={selectedJob} onSelect={setSelectedJob} />
+
+        {jobs.map((job) =>
+          selectedJob === "all" || selectedJob === job.Title ? (
+            <JobCard
+              key={job.Title}
+              Title={job.Title}
+              Company={job.Company}
+              DateStart={job.DateStart}
+              DateEnd={job.DateEnd}
+              Descriptions={job.Descriptions}
+            />
+          ) : null,
+        )}
       </div>
     </div>
   )

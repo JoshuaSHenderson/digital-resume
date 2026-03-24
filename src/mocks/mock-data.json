@@ -1,0 +1,24 @@
+[
+  {
+    "Title": "System Administrator",
+    "Company": "Lone Star Inc.",
+    "DateStart": "2023-06-01T00:00:00.000Z",
+    "DateEnd": "2025-12-31T00:00:00.000Z",
+    "Descriptions": [
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    ],
+    "Skills": ["Linux", "Networking", "Automation"]
+  },
+  {
+    "Title": "Software Engineer",
+    "Company": "Google",
+    "DateStart": "2025-01-15T00:00:00.000Z",
+    "DateEnd": "2027-03-01T00:00:00.000Z",
+    "Descriptions": [
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    ],
+    "Skills": ["Linux", "Networking", "Automation"]
+  }
+]
