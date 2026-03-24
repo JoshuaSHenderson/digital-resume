@@ -9,7 +9,11 @@ export interface AppProps {
 }
 
 export function App({ jobs }: AppProps) {
-  const [selectedJob, setSelectedJob] = useState<string | undefined>()
+  const [selectedJobTitle, setSelectedJobTitle] = useState<string | undefined>()
+  const [selectedDateStart, setSelectedDateStart] = useState<
+    string | undefined
+  >()
+  const [selectedCompany, setSelectedCompany] = useState<string | undefined>()
 
   return (
     <div className="flex min-h-svh flex-col items-center justify-center p-6">
@@ -20,14 +24,21 @@ export function App({ jobs }: AppProps) {
 
         <FilterJobs
           jobs={jobs}
-          selectedJob={selectedJob}
-          onSelect={setSelectedJob}
+          selectedJobTitle={selectedJobTitle}
+          onSelectJobTitle={setSelectedJobTitle}
+          selectedCompany={selectedCompany}
+          selectedDateStart={selectedDateStart}
+          onSelectDateStart={setSelectedDateStart}
+          onSelectCompany={setSelectedCompany}
         />
 
         {jobs.map((job) =>
-          selectedJob === "All" ||
-          selectedJob == undefined ||
-          selectedJob === job.Id.toString() ? (
+          filterJob(
+            job,
+            selectedJobTitle,
+            selectedDateStart,
+            selectedCompany
+          ) ? (
             <JobCard
               key={job.Id}
               Id={job.Id.toString()}
@@ -42,6 +53,19 @@ export function App({ jobs }: AppProps) {
       </div>
     </div>
   )
+}
+
+function filterJob(
+  job: IJob,
+  selectedJob: string | undefined,
+  selectedDateStart: string | undefined,
+  selectedCompany: string | undefined
+) {
+  if (selectedJob && job.Title !== selectedJob) return false
+  if (selectedDateStart && job.DateStart.toString() !== selectedDateStart)
+    return false
+  if (selectedCompany && job.Company !== selectedCompany) return false
+  return true
 }
 
 export default App
