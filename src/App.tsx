@@ -9,7 +9,7 @@ export interface AppProps {
 }
 
 export function App({ jobs }: AppProps) {
-  const [selectedJob, setSelectedJob] = useState<string>("all")
+  const [selectedJob, setSelectedJob] = useState<string | undefined>()
 
   return (
     <div className="flex min-h-svh flex-col items-center justify-center p-6">
@@ -18,19 +18,26 @@ export function App({ jobs }: AppProps) {
           <h1 className="text-center text-4xl">Joshua Henderson Resume</h1>
         </div>
 
-        <FilterJobs jobs={jobs} selectedJob={selectedJob} onSelect={setSelectedJob} />
+        <FilterJobs
+          jobs={jobs}
+          selectedJob={selectedJob}
+          onSelect={setSelectedJob}
+        />
 
         {jobs.map((job) =>
-          selectedJob === "all" || selectedJob === job.Title ? (
+          selectedJob === "All" ||
+          selectedJob == undefined ||
+          selectedJob === job.Id.toString() ? (
             <JobCard
-              key={job.Title}
+              key={job.Id}
+              Id={job.Id.toString()}
               Title={job.Title}
               Company={job.Company}
               DateStart={job.DateStart}
               DateEnd={job.DateEnd}
               Descriptions={job.Descriptions}
             />
-          ) : null,
+          ) : null
         )}
       </div>
     </div>

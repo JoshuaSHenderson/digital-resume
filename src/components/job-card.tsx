@@ -8,6 +8,7 @@ import {
 } from "./ui/card"
 
 export interface JobCardProps {
+  Id: string
   Title: string
   Company: string
   DateStart: Date

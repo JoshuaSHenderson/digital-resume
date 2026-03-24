@@ -1,4 +1,5 @@
 export interface IJob {
+  Id: number
   Title: string
   Company: string
   DateStart: Date

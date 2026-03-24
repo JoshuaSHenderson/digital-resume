@@ -8,6 +8,7 @@ export async function generateMockJobs({
     const dateStart = generateRandomDate(new Date(2020, 0, 1), new Date())
     const dateEnd = generateRandomDate(dateStart, new Date())
     jobs.push({
+      Id: `${i + 1}`,
       Title: `Job ${i + 1}`,
       Company: `Company ${i + 1}`,
       DateStart: dateStart.toISOString(),
