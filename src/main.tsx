@@ -18,7 +18,7 @@ type RawJob = Omit<IJob, "DateStart" | "DateEnd"> & {
 // const mockJobs = await generateMockJobs({ JobsToCreate: 10 })
 
 const importedJobs = await getJobApiService(true)
-const jobs: IJob[] = (importedJobs as RawJob[]).map((j) => ({
+const jobs: IJob[] = (importedJobs as unknown as RawJob[]).map((j) => ({
   ...j,
   DateStart: new Date(j.DateStart),
   DateEnd: new Date(j.DateEnd),
