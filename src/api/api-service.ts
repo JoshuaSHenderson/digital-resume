@@ -1,13 +1,14 @@
-import * as mockData from "../mocks/mock-data.json"
+import type { IJob } from "@/components/types/interfaces"
+import mockData from "../mocks/mock-data.json"
 
-export async function getJobApiService(isDemo: boolean): Promise<[]> {
-  let data = []
+export async function getJobApiService(isDemo: boolean) {
+  let data: IJob[]
   if (!isDemo) {
     const response = await fetch(import.meta.env.VITE_MOCK_DATA_PATH)
     data = await response.json()
   } else {
-    data = mockData
+    data = mockData as unknown as IJob[]
   }
 
-  return Promise.resolve(data)
+  return Array.isArray(data) ? data : []
 }

@@ -1,24 +1,167 @@
 [
   {
-    "Title": "System Administrator",
-    "Company": "Lone Star Inc.",
-    "DateStart": "2023-06-01T00:00:00.000Z",
-    "DateEnd": "2025-12-31T00:00:00.000Z",
+    "Id": "1",
+    "Title": "Application Developer",
+    "Company": "VPO Construction Management Software & Services",
+    "DateStart": "2023-01-01T00:00:00.000Z",
+    "DateEnd": "2099-12-31T00:00:00.000Z",
     "Descriptions": [
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      "Manage SharePoint online Tenants for 60+ clients.",
+      "Design, develop, and implement SharePoint solutions to complex business problems, utilizing skills in Azure, PowerShell, C#, SPFx and Power Platform.",
+      "Build Azure Pipelines to ensure smooth, reliable code deployments with built-in rollback capabilities for rapid recovery and minimal disruption.",
+      "Standardized cloud infrastructure by revisiting existing systems to ensure they meet requirements.",
+      "Work with third party vendors to resolve issues in their products to enhance the company product.",
+      "Follow SCRUM methodology to keep the product on track and guarantee tasks are completed on time.",
+      "Write and administer test plans (Azure DevOps) ensuring new features meet expectations and the definition of done.",
+      "Work closely with client facing internal users to ensure the product design and implementation matches the client’s business needs.",
+      "Consolidated existing code into manageable repositories and enforce proper source control."
     ],
-    "Skills": ["Linux", "Networking", "Automation"]
+    "Skills": [
+      "SharePoint",
+      "Office 365",
+      "Azure",
+      "PowerShell",
+      "C#",
+      "SPFx",
+      "Power Platform",
+      "Azure Pipelines",
+      "Azure DevOps",
+      "SCRUM"
+    ]
   },
   {
-    "Title": "Software Engineer",
-    "Company": "Google",
-    "DateStart": "2025-01-15T00:00:00.000Z",
-    "DateEnd": "2027-03-01T00:00:00.000Z",
+    "Id": "2",
+    "Title": "System Administrator",
+    "Company": "Xcoal Energy & Resources, Latrobe, Pennsylvania, United States",
+    "DateStart": "2020-03-01T00:00:00.000Z",
+    "DateEnd": "2023-01-31T00:00:00.000Z",
     "Descriptions": [
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      "Manage hybrid identity administration with Azure Active Directory and on-prem Active Directory.",
+      "Build, configure and manage the virtual environment powered by Nutanix and VMware.",
+      "Lead the company to modern data storage by utilizing SharePoint and OneDrive.",
+      "Track and respond to incoming threats by working closely with the external NOC and SOC.",
+      "Stay up to date with the current threat landscape to ensure all applications are secure and vulnerabilities are addressed.",
+      "Create project roadmaps to ensure new initiatives are accomplished quickly and effectively.",
+      "Build IT documentation from the ground up for all servers, network devices and applications.",
+      "Implement quarterly IT system reviews to ensure all aspects of the IT ecosystem stay on track, specifically with security and documentation.",
+      "Enhance end user support by instituting a ticketing system and enforcing proper communication regarding end user issues and requests.",
+      "Support over 100 end users spread across North America, Europe and Asia.",
+      "Manage on and off premises backups with Veeam and Nutanix Xi Leap."
     ],
-    "Skills": ["Linux", "Networking", "Automation"]
+    "Skills": [
+      "SharePoint",
+      "Documentation",
+      "Azure AD",
+      "Nutanix",
+      "VMware",
+      "OneDrive",
+      "Veeam",
+      "NOC",
+      "SOC",
+      "Ticketing"
+    ]
+  },
+  {
+    "Id": "3",
+    "Title": "Cloud Administrator",
+    "Company": "PHOENIX Rehabilitation and Health Services, Inc., Blairsville, Pennsylvania, United States",
+    "DateStart": "2019-02-01T00:00:00.000Z",
+    "DateEnd": "2020-03-01T00:00:00.000Z",
+    "Descriptions": [
+      "In addition to day-to-day administration, I was tasked with ensuring successful IT deployments of new clinics across the Eastern US. This duty would require me to work hand-in-hand with external vendors and internal assets to create acceptable roadmaps, ensuring that all systems were in place, functioning and secure by the target date. I was also tasked integrating new acquisitions into our IT infrastructure, requiring me to utilize my skills in identity administration and Azure Active Directory ensuring a successful transition.",
+      "Coordinated equipment and staff for IT infrastructure deployments for clinic acquisitions of up to ten practices at a time.",
+      "Conducted technical support for over a hundred clinics. Also acted as the single point of support for over four-hundred end users.",
+      "Identified unnecessary spend in Office 365 licenses, saving over $10,000 in op-ex per year.",
+      "Administrated the hybrid Azure Active Directory and Office 365 environment.",
+      "Created infrastructure specifications for over twenty new locations; quoted and directed installation with cabling vendors.",
+      "Leveraged Office 365 suite to enable cohesive file sharing between users at clinics.",
+      "Spearheaded a phishing project identifying a 30% failure rate. Performed remedial training as required.",
+      "Developed PowerShell scripts to streamline workflows, unify results and save man-hours.",
+      "Performed comprehensive analysis on existing processes, identifying and improving inefficiencies.",
+      "Managed the on-premise network and server resources to ensure constant uptime."
+    ],
+    "Skills": [
+      "SharePoint",
+      "Documentation",
+      "Azure AD",
+      "Office 365",
+      "PowerShell",
+      "Vendor management"
+    ]
+  },
+  {
+    "Id": "4",
+    "Title": "Tier 2 Support Specialist/ Installation",
+    "Company": "Ascend FS (Formerly Gaming Nation Inc.), Remote",
+    "DateStart": "2016-06-01T00:00:00.000Z",
+    "DateEnd": "2019-02-28T00:00:00.000Z",
+    "Descriptions": [
+      "While working at 50/50 Central/Ascend FS my primary duty was to provide tier two technical support to the end user community. I was also tasked with traveling across North America to assist professional teams with the installation, administration and training of their 50/50 server systems. During these events I would often be required to work in very time sensitive situations to ensure all systems consistently ran without downtime.",
+      "Helped grow the business by traveling across North America, Canada, and Germany to provide on-site technical support for high-profile clients associated with professional sports leagues.",
+      "As the initial point of contact, helped build customer trust using technical knowledge and customer support skills.",
+      "Utilized technical knowledge in high stress/ time sensitive situations to resolve client issues allowing them to continue their raffle with no interruptions.",
+      "Documented new versions of our proprietary software.",
+      "Created detailed guides to be used for future trainees and customer facing training manuals.",
+      "Engaged with customers and maintained positive business relationships through Salesforce CRM."
+    ],
+    "Skills": [
+      "Documentation",
+      "Scripting",
+      "Salesforce",
+      "Technical support",
+      "Training"
+    ]
+  },
+  {
+    "Id": "5",
+    "Title": "PC Technician",
+    "Company": "eLoopllc, Plum, Pennsylvania, United States",
+    "DateStart": "2015-11-01T00:00:00.000Z",
+    "DateEnd": "2016-06-30T00:00:00.000Z",
+    "Descriptions": [
+      "At eLoop llc my primary responsibility was to harvest hardware from retired corporate devices for resale. As part of these duties, it was paramount to maintain data security from the moment the device was received. I also assisted with a website redesign, revitalized the company's IT documentation, sanitized data drives according to DoD standards and provided internal end users with technical assistance.",
+      "Assisted in creating a new revenue stream by building and maintaining an OSX server for deploying operating systems to recycled Apple devices.",
+      "Ensured the various departments ran without downtime by providing technical support for any device, including network, peripherals, hardware and software.",
+      "Took initiative by building a complete network diagram and revitalized the IT documentation for the future IT team.",
+      "Worked with a team in the design/layout of a totally new company website.",
+      "Harvested material from PCs for resale or to be used in building computers.",
+      "Ensured confidentiality by wiping donated corporate hard drives."
+    ],
+    "Skills": [
+      "Documentation",
+      "Laptop Repair",
+      "macOS",
+      "Data sanitization",
+      "Networking"
+    ]
+  },
+  {
+    "Id": "6",
+    "Title": "Consultation Agent",
+    "Company": "Geek Squad, Greensburg",
+    "DateStart": "2015-03-01T00:00:00.000Z",
+    "DateEnd": "2016-01-31T00:00:00.000Z",
+    "Descriptions": [
+      "Simplified complex computer and network issues for clients unfamiliar with the technology further growing strong ties with the customer.",
+      "Through technical knowledge and customer service skills, received several compliments and recognitions which resulted in life long customers.",
+      "Created detailed tickets to aid in diagnosing client issues.",
+      "Through our teams efforts we became one of the highest rated ‘Precincts’ in the district.",
+      "Aided clients with suggestions for any technology.",
+      "Provided excellent customer service.",
+      "Set up client devices including PCs, tablets, smart watches and phones."
+    ],
+    "Skills": ["Laptop Repair", "Technical Support", "Customer service"]
+  },
+  {
+    "Id": "7",
+    "Title": "Administrative Assistant",
+    "Company": "Intergrated Paramedical Services",
+    "DateStart": "2013-06-01T00:00:00.000Z",
+    "DateEnd": "2015-03-31T00:00:00.000Z",
+    "Descriptions": [
+      "Assisted with any computer, network, or mobile device issue.",
+      "Call clients to schedule insurance exams."
+    ],
+    "Skills": ["Administrative support", "IT support", "Scheduling"]
   }
 ]
