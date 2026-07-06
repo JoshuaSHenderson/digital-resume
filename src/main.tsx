@@ -26,7 +26,7 @@ const jobs: IJob[] = (importedJobs as unknown as RawJob[]).map((j) => ({
 console.log("Jobs fetched successfully")
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <ThemeProvider>
+    <ThemeProvider defaultTheme="dark">
       <App jobs={jobs} />
     </ThemeProvider>
   </StrictMode>
