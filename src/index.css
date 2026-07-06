@@ -51,23 +51,26 @@
   --animate-ember: ember 9s linear infinite;
   --animate-float-slow: float-slow 7s ease-in-out infinite;
   --animate-bob: bob 2s ease-in-out infinite;
+  --animate-flicker: flicker 2.2s ease-in-out infinite;
+  --animate-sway: sway 6s ease-in-out infinite;
+  --animate-blink: blink 1s step-end infinite;
 }
 
-/* Parchment day */
+/* Daytime tavern — sun through shutters, scrubbed oak */
 :root {
-  --background: oklch(0.955 0.022 85);
-  --foreground: oklch(0.28 0.04 55);
-  --card: oklch(0.93 0.028 85);
-  --card-foreground: oklch(0.28 0.04 55);
-  --popover: oklch(0.93 0.028 85);
-  --popover-foreground: oklch(0.28 0.04 55);
-  --primary: oklch(0.5 0.11 70);
+  --background: oklch(0.94 0.028 80);
+  --foreground: oklch(0.28 0.05 50);
+  --card: oklch(0.91 0.035 78);
+  --card-foreground: oklch(0.28 0.05 50);
+  --popover: oklch(0.91 0.035 78);
+  --popover-foreground: oklch(0.28 0.05 50);
+  --primary: oklch(0.5 0.12 62);
   --primary-foreground: oklch(0.97 0.02 85);
-  --secondary: oklch(0.88 0.035 82);
-  --secondary-foreground: oklch(0.32 0.04 55);
-  --muted: oklch(0.89 0.03 84);
-  --muted-foreground: oklch(0.46 0.04 62);
-  --accent: oklch(0.45 0.15 300);
+  --secondary: oklch(0.86 0.04 75);
+  --secondary-foreground: oklch(0.32 0.05 50);
+  --muted: oklch(0.87 0.035 78);
+  --muted-foreground: oklch(0.46 0.05 55);
+  --accent: oklch(0.52 0.16 40);
   --accent-foreground: oklch(0.96 0.02 85);
   --destructive: oklch(0.577 0.245 27.325);
   --border: oklch(0.5 0.08 70 / 35%);
@@ -89,21 +92,21 @@
   --sidebar-ring: oklch(0.5 0.11 70);
 }
 
-/* Arcane night */
+/* Candlelit tavern night — hearth glow on dark oak */
 .dark {
-  --background: oklch(0.16 0.025 290);
-  --foreground: oklch(0.92 0.02 85);
-  --card: oklch(0.21 0.03 292);
-  --card-foreground: oklch(0.92 0.02 85);
-  --popover: oklch(0.21 0.03 292);
-  --popover-foreground: oklch(0.92 0.02 85);
-  --primary: oklch(0.8 0.12 85);
-  --primary-foreground: oklch(0.22 0.05 80);
-  --secondary: oklch(0.26 0.04 295);
-  --secondary-foreground: oklch(0.92 0.02 85);
-  --muted: oklch(0.25 0.03 292);
-  --muted-foreground: oklch(0.7 0.03 85);
-  --accent: oklch(0.6 0.18 305);
+  --background: oklch(0.17 0.028 50);
+  --foreground: oklch(0.92 0.025 80);
+  --card: oklch(0.23 0.038 55);
+  --card-foreground: oklch(0.92 0.025 80);
+  --popover: oklch(0.23 0.038 55);
+  --popover-foreground: oklch(0.92 0.025 80);
+  --primary: oklch(0.78 0.13 78);
+  --primary-foreground: oklch(0.24 0.05 60);
+  --secondary: oklch(0.29 0.045 55);
+  --secondary-foreground: oklch(0.92 0.025 80);
+  --muted: oklch(0.27 0.04 52);
+  --muted-foreground: oklch(0.72 0.04 72);
+  --accent: oklch(0.62 0.17 42);
   --accent-foreground: oklch(0.96 0.02 85);
   --destructive: oklch(0.704 0.191 22.216);
   --border: oklch(0.8 0.12 85 / 18%);
@@ -192,6 +195,42 @@
 @keyframes shimmer {
   to {
     background-position: 200% center;
+  }
+}
+
+@keyframes flicker {
+  0%,
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  25% {
+    opacity: 0.8;
+    transform: scale(0.97) rotate(-1.5deg);
+  }
+  55% {
+    opacity: 0.95;
+    transform: scale(1.03);
+  }
+  80% {
+    opacity: 0.75;
+    transform: scale(0.98) rotate(1.5deg);
+  }
+}
+
+@keyframes sway {
+  0%,
+  100% {
+    transform: rotate(-1.25deg);
+  }
+  50% {
+    transform: rotate(1.25deg);
+  }
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
   }
 }
 
