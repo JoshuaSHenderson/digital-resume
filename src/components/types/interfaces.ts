@@ -4,6 +4,7 @@ export interface IJob {
   Company: string
   DateStart: Date
   DateEnd: Date
+  JobDescription: string
   Descriptions: string[]
   Skills: string[]
 }

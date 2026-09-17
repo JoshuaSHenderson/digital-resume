@@ -5,6 +5,7 @@
     "Company": "VPO Construction Management Software & Services, Pittsburgh, Pennsylvania, United States",
     "DateStart": "2023-01-01T00:00:00.000Z",
     "DateEnd": "2026-09-30T00:00:00.000Z",
+    "JobDescription": "During my tenure at VPO my primary duty was developing and supporting a multi-tenant construction project management platform built on SharePoint Online and Azure, serving 30+ client tenants. This required working across the full stack-  SPFx and React on the front end, C# Azure Functions and PowerShell behind it. I developed both customer-facing features and the internal tooling our operations and support teams relied on, while working closely with client-facing internal users to keep implementation matched to business need.",
     "Descriptions": [
       "Architected a high-volume construction drawing issuance system for the platform's largest client on Azure Durable Functions — queue fan-out, blob and table storage, filtered telemetry.",
       "Drove AI adoption across a five-developer team, leading to improved QA, detailed documentation and consistent code across projects.",
