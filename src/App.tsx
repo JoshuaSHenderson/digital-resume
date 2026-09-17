@@ -253,6 +253,12 @@ function ExperienceEntry({ job }: { job: IJob }) {
         </span>
       </div>
 
+      <div>
+      <span className="mt-5 flex flex-col gap-2 text-sm leading-relaxed text-foreground/85">
+        {job.JobDescription}
+      </span>
+      </div>
+
       <ul className="mt-5 flex flex-col gap-2 text-sm leading-relaxed text-foreground/85">
         {bullets.slice(0, 3).map((item, i) => (
           <Bullet key={i} text={item} />

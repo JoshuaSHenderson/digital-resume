@@ -23,7 +23,6 @@ const jobs: IJob[] = (importedJobs as unknown as RawJob[]).map((j) => ({
   DateStart: new Date(j.DateStart),
   DateEnd: new Date(j.DateEnd),
 }))
-console.log("Jobs fetched successfully")
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <ThemeProvider>
