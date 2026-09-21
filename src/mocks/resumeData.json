@@ -1,0 +1,379 @@
+{
+  "Name": "Joshua Henderson",
+  "Headline": "Application Developer | SharePoint Online & Azure | Microsoft 365 Platform Engineering",
+  "Location": "Johnstown, Pennsylvania, United States",
+  "Summary": "SharePoint and Azure developer with 13 years in technology: four years building on Microsoft 365, and nine years administering it before that. I write software for the environments I used to keep running. Most recently by bulding and administering a multi-tenant construction platform on SharePoint Online and Azure for 30+ client tenants, front to back in SPFx, React and TypeScript with C# Azure Functions and PowerShell behind it.",
+  "Contact": {
+    "LinkedIn": {
+      "Logo": "https://cdn.simpleicons.org/linkedin",
+      "Text": "Linkedin.com/in/Joshua-S-Henderson/",
+      "Link": "https://www.linkedin.com/in/joshua-s-henderson/"
+    },
+    "Email": {
+      "Logo": "@",
+      "Text": "Joshua.Henderson@hotmail.com",
+      "Link": "mailto:Joshua.Henderson@hotmail.com"
+    },
+    "GitHub": {
+      "Logo": "https://cdn.simpleicons.org/github",
+      "Text": "Github.com/JoshuaSHenderson/",
+      "Link": "https://github.com/JoshuaSHenderson/"
+    },
+    "Phone": {
+      "Logo": "#",
+      "Text": "(724) 708-9551",
+      "Link": "tel:+17247089551"
+    }
+  },
+  "Highlights": [
+    {
+      "Value": "4",
+      "Label": "Years Developing in Sharepoint"
+    },
+    {
+      "Value": "10+",
+      "Label": "Years Supporting Microsoft 365"
+    },
+    {
+      "Value": "6+",
+      "Label": "Years Supporting Azure"
+    }
+  ],
+  "Experiance": [
+    {
+      "Id": "1",
+      "Title": "Application Developer",
+      "Company": "VPO Construction Management Software & Services, Pittsburgh, Pennsylvania, United States",
+      "DateStart": "2023-01-01T00:00:00.000Z",
+      "DateEnd": "2026-09-30T00:00:00.000Z",
+      "JobDescription": "During my tenure at VPO my primary duty was developing and supporting a multi-tenant construction project management platform built on SharePoint Online and Azure, serving 30+ client tenants. This required working across the full stack, with SPFx and React on the front end and C# Azure Functions and PowerShell behind it. I developed both customer-facing features and the internal tooling our operations and support teams relied on, while working closely with client-facing internal users to keep implementation matched to business need.",
+      "Descriptions": [
+        "Architected a high-volume construction drawing issuance system for the platform's largest client on Azure Durable Functions — queue fan-out, blob and table storage, filtered telemetry.",
+        "Drove AI adoption across a five-developer team, leading to improved QA, detailed documentation and consistent code across projects.",
+        "Designed and built the interface for an internal administration application (React 19, TypeScript, Vite, Azure Static Web Apps), which provides a single pane of glass to administer SharePoint webhooks across 30+ distinct tenants.",
+        "Built client-facing analytics in SPFx — visualizations and KPI metric tiles over SharePoint project data, surfacing the measures that drive project delivery and cost.",
+        "Using Azure Durable Functions and SPFx, built an email digest system with an end-user-facing configuration interface.",
+        "Authored a PowerShell 7 provisioning framework (v0.1-v4.2) for tenants, Site Collections and subsites, with an auditor that validates each build against the gold-standard template and emits an HTML compliance report.",
+        "Built Azure Pipelines with rollback for SPFx and .NET deployments; ran an AI-driven QA pass of 16 browser-automated cases that caught a systemic high-severity defect manual testing had missed."
+      ],
+      "Skills": [
+        "React",
+        "TypeScript",
+        "Vite",
+        "SPFx",
+        "C#",
+        "Azure Durable Functions",
+        "Azure Static Web Apps",
+        "PowerShell",
+        "SharePoint",
+        "Azure Pipelines",
+        "Azure DevOps",
+        "AI Tooling"
+      ]
+    },
+    {
+      "Id": "2",
+      "Title": "System Administrator",
+      "Company": "Xcoal Energy & Resources, Latrobe, Pennsylvania, United States",
+      "DateStart": "2020-03-01T00:00:00.000Z",
+      "DateEnd": "2023-01-31T00:00:00.000Z",
+      "JobDescription": "At Xcoal I was the sole system administrator (reporting directly to the Chief Technology Officer) for a global coal trading company — roughly 100 users across three continents, with 24/7/365 continuity expectations. Alongside day-to-day administration of identity, virtualization, networking and backup, I modernized an environment that had grown without oversight by migrating off a fifteen-year-old file server to SharePoint Online and OneDrive, introducing MFA and single sign-on, and developing a Power Automate system for filtering and organizing incoming lab analysis documents.",
+      "Descriptions": [
+        "Sole IT Administrator for ~100 users across North America, Europe and Asia with 24/7/365 continuity expectations.",
+        "Led the company's migration from a 15-year-old unmanaged file server to SharePoint Online and OneDrive — ran department-head discovery, trained departmental champions, and closed a gap where privileged information was visible company-wide.",
+        "Designed and built a Power Automate system that files incoming coal-analysis documents automatically — parsing lab emails to identify the vessel or rail car, tagging and filing them into SharePoint, with a weekly sweep that flags anything unmatched for review.",
+        "Administered hybrid Azure AD and on-premises Active Directory; built and managed the VMware and Nutanix environment; managed on- and off-premises backup with Veeam and Nutanix Xi Leap.",
+        "Implemented MFA, an SSO-secured password manager, a ticketing system, and the company's first IT documentation set on a quarterly review cycle.",
+        "Tracked and responded to incoming threats by working closely with the external NOC and SOC."
+      ],
+      "Skills": [
+        "Azure AD",
+        "Active Directory",
+        "VMware",
+        "Nutanix",
+        "Veeam",
+        "SharePoint",
+        "OneDrive",
+        "Power Automate",
+        "MFA / SSO",
+        "Documentation",
+        "NOC / SOC"
+      ]
+    },
+    {
+      "Id": "3",
+      "Title": "Cloud/Network Administrator",
+      "Company": "PHOENIX Rehabilitation and Health Services, Inc., Blairsville, Pennsylvania, United States",
+      "DateStart": "2019-02-01T00:00:00.000Z",
+      "DateEnd": "2020-03-01T00:00:00.000Z",
+      "JobDescription": "In addition to day-to-day administration, I was tasked with ensuring successful IT deployments of new clinics across the Eastern US. This duty would require me to work hand-in-hand with external vendors and internal assets to create acceptable roadmaps, ensuring that all systems were in place, functioning and secure by the target date. I was also tasked with integrating new acquisitions into our IT infrastructure, requiring me to utilize my skills in identity administration and Azure Active Directory ensuring a successful transition.",
+      "Descriptions": [
+        "Coordinated equipment, vendors and staff for IT deployments during acquisitions of up to ten practices at a time; wrote infrastructure specifications and Statements of Work for 20+ new locations.",
+        "Identified unnecessary Office 365 licensing spend, saving over $10,000 in operating expenditure per year.",
+        "Tier 2 support for all network and telephony issues across 100+ clinics; single point of support for 400+ end users.",
+        "Spearheaded a phishing simulation program identifying a 30% failure rate, then delivered remedial training; automated AD account life cycle with PowerShell.",
+        "Administrated the hybrid Azure Active Directory and Office 365 environment.",
+        "Leveraged Office 365 suite to enable cohesive file sharing between users at clinics."
+      ],
+      "Skills": [
+        "Azure AD",
+        "Office 365",
+        "PowerShell",
+        "Networking",
+        "Telephony",
+        "Vendor management",
+        "Documentation"
+      ]
+    },
+    {
+      "Id": "4",
+      "Title": "Tier 2 Support Specialist/ Installation",
+      "Company": "Ascend FS (Formerly Gaming Nation Inc.), Remote",
+      "DateStart": "2016-06-01T00:00:00.000Z",
+      "DateEnd": "2019-02-28T00:00:00.000Z",
+      "JobDescription": "While working at 50/50 Central/Ascend FS my primary duty was to provide tier two technical support to the end user community. I was also tasked with traveling across North America to assist professional teams with the installation, administration and training of their 50/50 server systems. During these events I would often be required to work in very time sensitive situations to ensure all systems consistently ran without downtime.",
+      "Descriptions": [
+        "Helped grow the business by traveling across North America, Canada, and Germany to provide on-site technical support for high-profile clients associated with professional sports leagues.",
+        "As the initial point of contact, helped build customer trust using technical knowledge and customer support skills.",
+        "Utilized technical knowledge in high stress/ time sensitive situations to resolve client issues allowing them to continue their raffle with no interruptions.",
+        "Documented new versions of our proprietary software.",
+        "Created detailed guides to be used for future trainees and customer facing training manuals.",
+        "Engaged with customers and maintained positive business relationships through Salesforce CRM."
+      ],
+      "Skills": [
+        "Documentation",
+        "Scripting",
+        "Salesforce",
+        "Technical support",
+        "Training"
+      ]
+    },
+    {
+      "Id": "5",
+      "Title": "PC Technician",
+      "Company": "eLoop LLC, Plum, Pennsylvania, United States",
+      "DateStart": "2015-11-01T00:00:00.000Z",
+      "DateEnd": "2016-06-30T00:00:00.000Z",
+      "JobDescription": "At eLoop LLC my primary responsibility was to harvest hardware from retired corporate devices for resale. As part of these duties, it was paramount to maintain data security from the moment the device was received. I also assisted with a website redesign, revitalized the company's IT documentation, sanitized data drives according to DoD standards and provided internal end users with technical assistance.",
+      "Descriptions": [
+        "Assisted in creating a new revenue stream by building and maintaining an OSX server for deploying operating systems to recycled Apple devices.",
+        "Ensured the various departments ran without downtime by providing technical support for any device, including network, peripherals, hardware and software.",
+        "Took initiative by building a complete network diagram and revitalized the IT documentation for the future IT team.",
+        "Worked with a team in the design/layout of a totally new company website.",
+        "Harvested material from PCs for resale or to be used in building computers.",
+        "Ensured confidentiality by wiping donated corporate hard drives."
+      ],
+      "Skills": [
+        "Documentation",
+        "Laptop Repair",
+        "macOS",
+        "Data sanitization",
+        "Networking"
+      ]
+    },
+    {
+      "Id": "6",
+      "Title": "Consultation Agent",
+      "Company": "Geek Squad, Greensburg, Pennsylvania, United States",
+      "DateStart": "2015-03-01T00:00:00.000Z",
+      "DateEnd": "2016-01-31T00:00:00.000Z",
+      "JobDescription": "As a Consultation Agent I was the first point of contact for clients bringing in computers, networks and mobile devices. My primary duty was to diagnose the issue, document it clearly for the technicians behind me, and explain it to the client in terms they could act on.",
+      "Descriptions": [
+        "Simplified complex computer and network issues for clients unfamiliar with the technology further growing strong ties with the customer.",
+        "Through technical knowledge and customer service skills, received several compliments and recognitions which resulted in life long customers.",
+        "Created detailed tickets to aid in diagnosing client issues.",
+        "Through our teams efforts we became one of the highest rated 'Precincts' in the district.",
+        "Aided clients with suggestions for any technology.",
+        "Set up client devices including PCs, tablets, smart watches and phones."
+      ],
+      "Skills": [
+        "Laptop Repair",
+        "Technical Support",
+        "Customer service"
+      ]
+    },
+    {
+      "Id": "7",
+      "Title": "PC Technician / Administrative Assistant",
+      "Company": "Integrated Paramedical Services, Latrobe, Pennsylvania, United States",
+      "DateStart": "2013-06-01T00:00:00.000Z",
+      "DateEnd": "2015-03-31T00:00:00.000Z",
+      "JobDescription": "My first role in IT. At Integrated Paramedical Services I supported the practice end to end, handling any computer, network or mobile device issue that came up, maintaining the server and printers, and covering administrative duties including scheduling insurance exams with clients.",
+      "Descriptions": [
+        "Assisted with any computer, network, or mobile device issue.",
+        "Software installation, desktop repair, server maintenance and printer installation for the practice.",
+        "Call clients to schedule insurance exams."
+      ],
+      "Skills": [
+        "IT support",
+        "Hardware",
+        "Networking",
+        "Administrative support",
+        "Scheduling"
+      ]
+    }
+  ],
+  "Projects": [
+    {
+      "Title": "Digital Resume",
+      "Tagline": "The site you are reading",
+      "DateStart": "2026-03-01T00:00:00.000Z",
+      "DateEnd": "2099-12-31T00:00:00.000Z",
+      "Description": "A single-page resume built as a React 19 and TypeScript application and deployed to Cloudflare Workers. Every section renders from one typed JSON document, so updating my experience, skills or recommendations is a data change rather than a code change. I built it to keep my resume current in one place, and to have somewhere to work with the parts of the stack I do not reach for at work.",
+      "Highlights": [
+        "Data-driven throughout: one typed JSON document feeds the hero, experience, skills, projects, recommendations and contact sections.",
+        "Skills are derived from the job history rather than maintained separately, so the tag list cannot drift out of date.",
+        "Each section is its own component, with scroll-triggered reveals built on IntersectionObserver instead of an animation library.",
+        "Styled with Tailwind 4 and shadcn/ui, with light and dark themes and a layout that works from phone width up.",
+        "Built with Vite and deployed to Cloudflare Workers with Wrangler; the build type-checks the whole app before it ships."
+      ],
+      "Skills": [
+        "React 19",
+        "TypeScript",
+        "Vite",
+        "Tailwind CSS",
+        "shadcn/ui",
+        "Cloudflare Workers"
+      ],
+      "Links": [
+        {
+          "Label": "resume.hdsn-tech.com",
+          "Url": "https://resume.hdsn-tech.com"
+        },
+        {
+          "Label": "Source on GitHub",
+          "Url": "https://github.com/JoshuaSHenderson/digital-resume"
+        }
+      ]
+    }
+  ],
+  "SoftSkills": [
+    {
+      "Name": "AI Engineering",
+      "Description": "Agent tooling and adoption, retrieval-augmented generation, LLM tool calling, Model Context Protocol, AI-assisted QA."
+    },
+    {
+      "Name": "Integration & APIs",
+      "Description": "Production integration against internal and external APIs, documented or not."
+    },
+    {
+      "Name": "Root-Cause Debugging",
+      "Description": "Production-only failures traced to source: front-end rendering, async races, API contract mismatches, network-layer faults."
+    },
+    {
+      "Name": "Platform Ownership",
+      "Description": "Multi-tenant SaaS on Microsoft 365; provisioning, configuration and roll out across 30+ client tenants."
+    },
+    {
+      "Name": "Systems Background",
+      "Description": "Six years administering production infrastructure before development: identity, virtualization, backup, threat response."
+    },
+    {
+      "Name": "Documentation",
+      "Description": "API references from live probes, support-facing guides, compliance reporting."
+    },
+    {
+      "Name": "Knowledge Sharing",
+      "Description": "Led developer forums, ran discovery on new tooling, and delivered recommendations, demos and working examples to the development team."
+    }
+  ],
+  "HardSkills": [
+    {
+      "Application": "JavaScript / TypeScript / React",
+      "Details": "SPFx, Vite, Storybook"
+    },
+    {
+      "Application": "C#",
+      "Details": "Azure Functions, Durable Functions"
+    },
+    {
+      "Application": "PowerShell",
+      "Details": "PnP.PowerShell, CSOM, Azure Modules, SharePoint, Azure, Office 365"
+    },
+    {
+      "Application": "Azure",
+      "Details": "Key Vault, Functions, Entra ID, VMs/Networking, Storage/Queues"
+    },
+    {
+      "Application": "Azure DevOps",
+      "Details": "Pipelines, Boards, Test Plans, Source Control"
+    },
+    {
+      "Application": "AI",
+      "Details": "RAG, LLM agents, MCP, PostgreSQL/pgvector"
+    },
+    {
+      "Application": "Containerization / Virtualization",
+      "Details": "Docker, ProxMox, VMware"
+    }
+  ],
+  "Education": {
+    "School": "ITT Technical Institute",
+    "GPA": "4.0",
+    "Degree": "Associates Degree in Information Technology / Computer Network Systems",
+    "DateEnd": "2016-06-30T00:00:00.000Z"
+  },
+  "Recomendations": [
+    {
+      "Name": "Jake",
+      "Title": "Senior Architect",
+      "Relationship": "Worked with Joshua on the same team",
+      "Date": "2026-09-17",
+      "Text": "I worked closely with Joshua for more than two years at VPO, collaborating with him on numerous application development and cloud engineering initiatives. He consistently impressed me with his exceptional work ethic, technical curiosity, humility, and dedication. Joshua is the kind of engineer who can quickly master an unfamiliar problem, develop a thoughtful solution, document it thoroughly, and stay engaged until the work is done correctly.\n\nOne of the best examples was our construction drawing issuance system, a particularly complex and demanding project. The system began with a PowerShell-based solution that Joshua authored. As its requirements evolved, he helped guide me through modernizing it into an Azure Durable Functions architecture. I developed much of the Azure Functions implementation, but Joshua remained an invaluable partner throughout the process, helping us overcome difficult technical challenges and carrying forward the deep knowledge he had built through the original system. His combination of technical ability, ownership, and willingness to collaborate made a significant difference.\n\nJoshua also stands out in how effectively he uses AI for rapid prototyping and software development. He approaches new tools with curiosity and sound judgment, using them to accelerate delivery while still producing well-considered, maintainable solutions.\n\nAbove all, Joshua is dependable, passionate about his work, and continually learning. He consistently exceeds expectations, and I would work with him again without hesitation. I strongly recommend him to any organization seeking a dedicated software or cloud engineer who will make an immediate and lasting contribution.",
+      "LinkedJob": [
+        1
+      ]
+    },
+    {
+      "Name": "Aaron",
+      "Title": "Cloud Architect for Office 365 & Azure",
+      "Relationship": "Worked with Joshua on the same team",
+      "Date": "2026-09-17",
+      "Text": "Josh is an incredible developer and one of the most reliable and supportive teammates I've had the opportunity to work with. His ability to take complex technical problems, understand the underlying challenges, and turn them into well-architected, practical solutions is second to none.\n\nDuring our time working together, Josh consistently demonstrated both exceptional technical depth and a willingness to elevate those around him. He led developer forums that kept the team aligned, encouraged knowledge sharing, and helped us all find meaningful ways to incorporate AI into our development workflows.\n\nOne of Josh's greatest strengths is his ability to quickly become productive with new technologies. He has a natural ability to learn, understand, and apply new concepts without losing sight of sound engineering principles and maintainable architecture.\n\nBeyond his technical abilities, Josh is the kind of teammate everyone wants in their corner. When a team member needs help, he is always one of the first to lend a hand. He brings a collaborative attitude, shares his knowledge freely, and genuinely wants to see the entire team succeed.\n\nJosh is an exceptional developer, a strong technical leader, and a teammate I would be excited to work with again.",
+      "LinkedJob": [
+        1
+      ]
+    },
+    {
+      "Name": "Connor",
+      "Title": "IT Pro | Azure & Microsoft 365",
+      "Relationship": "Worked with Joshua on the same team",
+      "Date": "2026-09-15",
+      "Text": "I have had the honor of working with Josh on two separate occasions, first during his years as a cloud administrator and then more recently as a front-end application developer. Josh found great success in both seats.\n\nWhat makes Josh unique is his pursuit of the optimal. If he sees issues or inefficiencies, he will troubleshoot, research, design and build to a high degree. His passion for understanding the latest technologies and the opportunities they create has led to an impressive portfolio of work for him.\n\nSpecifically, he recently designed and implemented a custom BI Analytics tool for our construction customers that allowed quick insight into critical KPIs affecting project delivery and costs. Beyond that, he was key in standing up an internal administration app that provided centralized control over a wide spread of cloud resources on a single pane. Finally, he architected a comprehensive drawing issuance system that permitted large-volume clients to upload, process and organize thousands of construction drawings into a searchable catalog, ensuring fluidity in a process that is notoriously marked by friction and inefficiency.",
+      "LinkedJob": [
+        1,
+        3
+      ]
+    },
+    {
+      "Name": "Kurt",
+      "Title": "Product & Technology Leadership | Cross-Functional Alignment | Turning Complexity into Execution",
+      "Relationship": "Managed Joshua directly",
+      "Date": "2019-11-08",
+      "Text": "Josh is a valuable asset. His curious and conscientious nature makes him a fast learner and an effective communicator. When we worked together, he was always willing to take on more responsibility and larger projects. Good project coordination skills, specifically managing partner level vendor relationships, helped the organization's important projects stay on track. Josh was proactive in increasing his technical knowledge to fill gaps in the department including automation and documentation.",
+      "LinkedJob": [
+        3
+      ]
+    },
+    {
+      "Name": "Steven",
+      "Title": "Supply Chain and Logistics Management Professional",
+      "Relationship": "Managed Joshua directly",
+      "Date": "2018-10-08",
+      "Text": "Josh is hard working, detailed oriented, knowledgeable, helpful and a team player. As soon as Josh was hired he was helping fellow support specialists applying his background in IT to the 5050 application. Josh is very personable and helpful; these traits were very helpful in his role as a Tier 2 telephone support specialist. They were very important as Josh was continually tasked with going on the road to complete 5050 software and hardware installations which included troubleshooting technical problems, providing customer training and technical support during a live 5050 draw.\n\nJosh always followed up on open issues with internal and external customers ensuring that his customer was happy with his technical support and issue resolution. Josh knows when to dig deeper into an issue and when it is time to escalate to the next level of support. He is very diligent when troubleshooting problems and is very resourceful when looking to resolve an issue.\n\nIf an opportunity presents itself for me to hire Josh again, I would not hesitate to bring him onto the team.",
+      "LinkedJob": [
+        4
+      ]
+    },
+    {
+      "Name": "Ned",
+      "Title": "CEO",
+      "Relationship": "Senior to Joshua, did not manage directly",
+      "Date": "2018-09-19",
+      "Text": "Joshua was an asset to have as an employee. He showed up for work, interacted with his co-workers well and he completed his work assignments on time. He completed his education and moved on to work more directly in the IT services industry. He was an asset to the organization and i would hire him back anytime.",
+      "LinkedJob": [
+        5
+      ]
+    }
+  ]
+}

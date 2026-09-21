@@ -4,29 +4,15 @@ import { createRoot } from "react-dom/client"
 import "./index.css"
 import App from "./App.tsx"
 import { ThemeProvider } from "@/components/theme-provider.tsx"
-import type { IJob } from "./components/types/interfaces.ts"
-// import { generateMockJobs } from "./mocks/mock-api.ts"
 import { getJobApiService } from "./api/api-service.ts"
+import type { IImportedData } from "./types/interfaces.ts"
 
-type RawJob = Omit<IJob, "DateStart" | "DateEnd"> & {
-  DateStart: string
-  DateEnd: string
-}
 
-// const jobs: IJob[] = await getJobApiService(true)
-
-// const mockJobs = await generateMockJobs({ JobsToCreate: 10 })
-
-const importedJobs = await getJobApiService(true)
-const jobs: IJob[] = (importedJobs as unknown as RawJob[]).map((j) => ({
-  ...j,
-  DateStart: new Date(j.DateStart),
-  DateEnd: new Date(j.DateEnd),
-}))
+const resume: IImportedData = await getJobApiService(true)
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <ThemeProvider>
-      <App jobs={jobs} />
+      <App importedData={resume} />
     </ThemeProvider>
   </StrictMode>
 )
