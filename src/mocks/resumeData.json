@@ -245,6 +245,68 @@
           "Url": "https://github.com/JoshuaSHenderson/digital-resume"
         }
       ]
+    },
+    {
+      "Title": "HDSN-TECH Home Lab",
+      "Tagline": "A production-style network I run at home",
+      "DateStart": "2015-01-01T00:00:00.000Z",
+      "DateEnd": "2099-12-31T00:00:00.000Z",
+      "Description": "A self-hosted lab I have run and rebuilt for about a decade, and where most of what I know about networking, virtualisation and Linux was actually learned. It is a segmented pfSense network on a Proxmox hypervisor, with Active Directory, a NAS, a Docker host and a monitoring stack, all kept to the same standards I would apply at work: VLAN isolation, scheduled backups, alerting and documentation.",
+      "Highlights": [
+        "pfSense firewall routing six VLANs — infrastructure, security, guest, IoT, game and a second site segment — with the camera, guest and IoT networks isolated from the server network.",
+        "Proxmox hypervisor hosting the firewall, domain controllers and media VMs, migrated off an ageing VMware ESXi host without losing services.",
+        "Windows Server Active Directory domain with two domain controllers across sites, running DNS, Kerberos, LDAP and SMB.",
+        "TrueNAS/FreeNAS storage serving SMB shares, with configuration exports and scheduled application backups archived off the host.",
+        "Ubuntu Docker host running n8n, Portainer and a handful of self-built services, published selectively over Tailscale rather than open ports.",
+        "An n8n workflow polls every service on a five minute schedule and sends a Pushover alert the moment one stops answering.",
+        "Whole estate documented from live nmap scans — a device inventory, a network diagram and per-service runbooks kept in version control."
+      ],
+      "Skills": [
+        "pfSense",
+        "Proxmox",
+        "VLANs",
+        "Active Directory",
+        "TrueNAS",
+        "Linux",
+        "Docker",
+        "n8n",
+        "Tailscale",
+        "Networking"
+      ],
+      "Links": []
+    },
+    {
+      "Title": "PZ Server Manager",
+      "Tagline": "A web control panel for my game servers",
+      "DateStart": "2026-06-27T00:00:00.000Z",
+      "DateEnd": "2099-12-31T00:00:00.000Z",
+      "Description": "A Node and Express web app that runs beside my Project Zomboid servers in Docker and gives them the management interface they never shipped with. It began as a throwaway, vibe-coded experiment to stop me SSHing into the host every time a server needed a restart or a mod, and turned into the tool I now run everything through: it discovers every server on the host, streams their logs, edits their configuration and tells me on my phone when something happens. Its growth is also what forced the engineering into it, the crash handling, the config validation and the notification plumbing all came from running the quick version for real and finding where it broke.",
+      "Highlights": [
+        "Single-page UI over a REST API, with dashboard, mods, players, logs and settings views, running as its own docker container alongside the game servers.",
+        "Live log view streamed over server-sent events straight from the container, with filtering, pause and severity colouring.",
+        "Mod installs driven through SteamCMD, including whole Steam Workshop collections resolved from the public collection endpoint, with download progress parsed out of the server log.",
+        "Servers are discovered by cross-referencing Docker bind mounts rather than being hardcoded, so a new server appears in the picker under its own live name with no config edit.",
+        "Push and Discord notifications for crashes, low disk, completed downloads and player join, leave, death and kick events, read from the game logs by byte offset so nothing replays after a restart.",
+        "Full configuration editor covering every key in the server ini, plus raw access to the sandbox Lua file rather than a fragile parser for it.",
+        "Debugged the parts that only break in production: a blocking child process that killed in-flight downloads on redeploy, and a request handler that silently fell back to the wrong server on a stale selection."
+      ],
+      "Skills": [
+        "Node.js",
+        "Express",
+        "JavaScript",
+        "Docker",
+        "Claude",
+        "REST APIs",
+        "Server-Sent Events",
+        "Linux",
+        "AI Engineering"
+      ],
+      "Links": [
+        {
+          "Label": "Source on GitHub",
+          "Url": "https://github.com/JoshuaSHenderson/pz-server-manager"
+        }
+      ]
     }
   ],
   "SoftSkills": [
@@ -347,7 +409,7 @@
     },
     {
       "Name": "Kurt",
-      "Title": "Product & Technology Leadership | Cross-Functional Alignment | Turning Complexity into Execution",
+      "Title": "Product & Technology Leadership",
       "Relationship": "Managed Joshua directly",
       "Date": "2019-11-08",
       "Text": "Josh is a valuable asset. His curious and conscientious nature makes him a fast learner and an effective communicator. When we worked together, he was always willing to take on more responsibility and larger projects. Good project coordination skills, specifically managing partner level vendor relationships, helped the organization's important projects stay on track. Josh was proactive in increasing his technical knowledge to fill gaps in the department including automation and documentation.",
