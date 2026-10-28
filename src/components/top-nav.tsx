@@ -13,7 +13,7 @@ export function TopNav({ name }: { name: string }) {
             href="#projects"
             className="hidden transition hover:text-foreground sm:inline"
           >
-            Projects
+            Personal Projects
           </a>
           <a href="#skills" className="transition hover:text-foreground">
             Skills

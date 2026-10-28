@@ -172,3 +172,15 @@ details.entry[open] > summary .chevron {
     scroll-behavior: auto;
   }
 }
+
+/* Printing. Reveals animate in on scroll, so force them visible on paper. */
+@media print {
+  .reveal {
+    opacity: 1;
+    transform: none;
+  }
+  header,
+  nav[aria-label="Sections"] {
+    display: none !important;
+  }
+}
