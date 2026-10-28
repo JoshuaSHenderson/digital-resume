@@ -1,5 +1,4 @@
-import { Mail, Phone } from "lucide-react"
-
+import { ContactLinks } from "@/components/link-buttons"
 import { Reveal } from "@/components/reveal"
 import type { IContactMethod } from "@/types/interfaces"
 
@@ -18,24 +17,14 @@ export function ContactSection({
             Let's work together
           </h2>
           <p className="mt-3 max-w-md leading-relaxed text-muted-foreground">
-            Open to conversations about application development, cloud
-            architecture, and systems work.
+            Open to conversations about System Administration, Application Development, Cloud
+            Architecture and System/Cloud Engineering.
           </p>
-          <div className="mt-6 flex flex-wrap gap-3">
-            <a
-              href={contact.Email.Link}
-              className="inline-flex items-center gap-2 rounded-lg bg-primary px-5 py-2.5 text-sm font-medium text-primary-foreground transition hover:opacity-90"
-            >
-              <Mail className="size-4" />
-              {contact.Email.Text}
-            </a>
-            <a
-              href={contact.Phone.Link}
-              className="inline-flex items-center gap-2 rounded-lg border border-border px-5 py-2.5 text-sm font-medium transition hover:border-primary/50 hover:text-primary"
-            >
-              <Phone className="size-4" />
-              {contact.Phone.Text}
-            </a>
+          <div className="mt-6">
+            <ContactLinks
+              contact={contact}
+              primaryLabel={contact.Email.Text}
+            />
           </div>
         </div>
       </Reveal>

@@ -14,7 +14,7 @@ export function ProjectsSection({
   return (
     <section id="projects" className="mx-auto max-w-3xl scroll-mt-20 px-6 py-20">
       <Reveal>
-        <h2 className="text-3xl font-bold tracking-tight">Projects</h2>
+        <h2 className="text-3xl font-bold tracking-tight">Personal Projects</h2>
       </Reveal>
       <Reveal delay={100}>
         <p className="mt-3 text-sm text-muted-foreground">

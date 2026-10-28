@@ -1,11 +1,11 @@
 {
   "Name": "Joshua Henderson",
-  "Headline": "Cloud Engineering | Application Development | SharePoint Online & Azure | Microsoft 365 Platform Engineering",
+  "Headline": "Cloud Engineering | System Administration | Application Development | SharePoint Online & Azure | Microsoft 365 Platform Engineering",
   "Location": "Johnstown, Pennsylvania, United States",
   "Summary": "Cloud engineer with 13 years in technology. The last four building on Microsoft 365, and the nine before that administering it. Most recently by bulding and administering a multi-tenant construction platform on SharePoint Online and Azure for 30+ client tenants with SPFx, React and TypeScript on the front, C#, Azure Functions and PowerShell on the back, and Azure infrastructure holding it up .",
   "Contact": {
     "LinkedIn": {
-      "Logo": "https://cdn.simpleicons.org/linkedin",
+      "Logo": "https://api.iconify.design/mdi/linkedin.svg?color=%230A66C2",
       "Text": "Linkedin.com/in/Joshua-S-Henderson/",
       "Link": "https://www.linkedin.com/in/joshua-s-henderson/"
     },
@@ -15,7 +15,7 @@
       "Link": "mailto:Joshua.Henderson@hotmail.com"
     },
     "GitHub": {
-      "Logo": "https://cdn.simpleicons.org/github",
+      "Logo": "https://cdn.simpleicons.org/github/181717",
       "Text": "Github.com/JoshuaSHenderson/",
       "Link": "https://github.com/JoshuaSHenderson/"
     },
@@ -48,13 +48,17 @@
       "DateEnd": "2026-09-30T00:00:00.000Z",
       "JobDescription": "During my tenure at VPO my primary duty was developing and supporting a multi-tenant construction project management platform built on SharePoint Online and Azure, serving 30+ client tenants. This required working across the full stack, with SPFx and React on the front end and C# Azure Functions and PowerShell behind it. I developed both customer-facing features and the internal tooling our operations and support teams relied on, while working closely with client-facing internal users to keep implementation matched to business need.",
       "Descriptions": [
-        "Architected a high-volume construction drawing issuance system for the platform's largest client on Azure Durable Functions — queue fan-out, blob and table storage, filtered telemetry.",
-        "Drove AI adoption across a five-developer team, leading to improved QA, detailed documentation and consistent code across projects.",
+        "Architected a high-volume construction drawing issuance system for the platform's largest client on Azure Durable Functions — queue fan-out, blob and table storage, and filtered telemetry in Log Analytics.",
+        "Drove AI adoption across a five-developer team with Claude, ChatGPT and Cursor, leading to improved QA, detailed documentation and consistent code across projects.",
         "Designed and built the interface for an internal administration application (React 19, TypeScript, Vite, Azure Static Web Apps), which provides a single pane of glass to administer SharePoint webhooks across 30+ distinct tenants.",
         "Built client-facing analytics in SPFx — visualizations and KPI metric tiles over SharePoint project data, surfacing the measures that drive project delivery and cost.",
-        "Using Azure Durable Functions and SPFx, built an email digest system with an end-user-facing configuration interface.",
+        "Using Azure Durable Functions, SPFx and SendGrid, built an email digest system with an end-user-facing configuration interface that iterates every tenant and list to surface coming-due actionable tasks.",
+        "Maintained a 14-module SPFx estate — 11 extensions and 4 web parts sharing an internally published npm package — with configuration held as data per client so behaviour changes without a rebuild.",
+        "Built a queue-driven document rollup in C# and .NET 8 Azure Functions, aggregating documents across project sites into a single searchable catalog.",
         "Authored a PowerShell 7 provisioning framework (v0.1-v4.2) for tenants, Site Collections and subsites, with an auditor that validates each build against the gold-standard template and emits an HTML compliance report.",
-        "Built Azure Pipelines with rollback for SPFx and .NET deployments; ran an AI-driven QA pass of 16 browser-automated cases that caught a systemic high-severity defect manual testing had missed."
+        "Wrote a controlled PowerShell script library for the support team, so routine tenant operations stopped needing a developer.",
+        "Built Azure Pipelines with rollback for SPFx and .NET deployments; ran an AI-driven QA pass of 16 browser-automated cases that caught a systemic high-severity defect manual testing had missed.",
+        "Ran the classic-to-modern SharePoint migration toolkit and client data migrations, taking client sites and module go-lives through to production."
       ],
       "Skills": [
         "React",
@@ -62,8 +66,14 @@
         "Vite",
         "SPFx",
         "C#",
+        ".NET 8",
         "Azure Durable Functions",
         "Azure Static Web Apps",
+        "Azure Storage Queues",
+        "Azure Log Analytics",
+        "Azure Key Vault",
+        "Microsoft Graph",
+        "SendGrid",
         "PowerShell",
         "SharePoint",
         "Azure Pipelines",
@@ -82,13 +92,17 @@
         "Sole IT Administrator for ~100 users across North America, Europe and Asia with 24/7/365 continuity expectations.",
         "Led the company's migration from a 15-year-old unmanaged file server to SharePoint Online and OneDrive — ran department-head discovery, trained departmental champions, and closed a gap where privileged information was visible company-wide.",
         "Designed and built a Power Automate system that files incoming coal-analysis documents automatically — parsing lab emails to identify the vessel or rail car, tagging and filing them into SharePoint, with a weekly sweep that flags anything unmatched for review.",
-        "Administered hybrid Azure AD and on-premises Active Directory; built and managed the VMware and Nutanix environment; managed on- and off-premises backup with Veeam and Nutanix Xi Leap.",
-        "Implemented MFA, an SSO-secured password manager, a ticketing system, and the company's first IT documentation set on a quarterly review cycle.",
-        "Tracked and responded to incoming threats by working closely with the external NOC and SOC."
+        "Administered hybrid Azure AD (now Entra ID) and on-premises Active Directory on Windows Server 2016; hardened identity with AAD Connect, Password Protection, self-service password reset with writeback and LAPS.",
+        "Built and managed the VMware and Nutanix environment; managed on- and off-premises backup with Veeam and Nutanix Xi Leap against tiered recovery objectives.",
+        "Implemented MFA with Duo, an SSO-secured Bitwarden password manager, a ticketing system, and the company's first IT documentation set on a quarterly review cycle.",
+        "Configured and deployed FortiGate firewalls, switches and cabling across multiple sites, segmenting the network and resolving faults as they came up.",
+        "Stood up an on-premises OpenCanary honeypot on Ubuntu Linux to detect lateral movement, and onboarded SIEM and microsegmentation (Graylog proof of concept, SECaaS, Guardicore).",
+        "Tracked and responded to incoming threats with the external NOC and SOC, and ran penetration-test remediation and zero-day response to closure."
       ],
       "Skills": [
-        "Azure AD",
+        "Entra ID",
         "Active Directory",
+        "Windows Server",
         "VMware",
         "Nutanix",
         "Veeam",
@@ -96,6 +110,11 @@
         "OneDrive",
         "Power Automate",
         "MFA / SSO",
+        "FortiGate",
+        "Networking",
+        "Linux",
+        "Security Operations",
+        "SIEM",
         "Documentation",
         "NOC / SOC"
       ]
@@ -112,12 +131,16 @@
         "Identified unnecessary Office 365 licensing spend, saving over $10,000 in operating expenditure per year.",
         "Tier 2 support for all network and telephony issues across 100+ clinics; single point of support for 400+ end users.",
         "Spearheaded a phishing simulation program identifying a 30% failure rate, then delivered remedial training; automated AD account life cycle with PowerShell.",
-        "Administrated the hybrid Azure Active Directory and Office 365 environment.",
+        "Set up Microsoft Intune and Windows Autopilot for zero-touch onboarding of users and computers, cutting onboarding time in a growth-focused environment.",
+        "Administrated the hybrid Azure Active Directory (Entra ID) and Office 365 environment, including dynamic Microsoft 365 groups driving SharePoint permissions.",
+        "Ran the identity cutover for an acquired company and deployed the Raintree EHR client across clinics.",
         "Leveraged Office 365 suite to enable cohesive file sharing between users at clinics."
       ],
       "Skills": [
-        "Azure AD",
+        "Entra ID",
         "Office 365",
+        "Intune",
+        "Windows Autopilot",
         "PowerShell",
         "Networking",
         "Telephony",
@@ -138,12 +161,14 @@
         "Utilized technical knowledge in high stress/ time sensitive situations to resolve client issues allowing them to continue their raffle with no interruptions.",
         "Documented new versions of our proprietary software.",
         "Created detailed guides to be used for future trainees and customer facing training manuals.",
+        "Developed PowerShell scripts that gathered logs and ran first-pass troubleshooting before a Jira escalation, giving developers what they needed to identify issues quickly.",
         "Engaged with customers and maintained positive business relationships through Salesforce CRM."
       ],
       "Skills": [
         "Documentation",
-        "Scripting",
+        "PowerShell",
         "Salesforce",
+        "Jira",
         "Technical support",
         "Training"
       ]
@@ -225,7 +250,7 @@
         "Skills are derived from the job history rather than maintained separately, so the tag list cannot drift out of date.",
         "Each section is its own component, with scroll-triggered reveals built on IntersectionObserver instead of an animation library.",
         "Styled with Tailwind 4 and shadcn/ui, with light and dark themes and a layout that works from phone width up.",
-        "Built with Vite and deployed to Cloudflare Workers with Wrangler; the build type-checks the whole app before it ships."
+        "Built with Vite and deployed to Azure Static Web Apps"
       ],
       "Skills": [
         "React 19",
@@ -233,7 +258,8 @@
         "Vite",
         "Tailwind CSS",
         "shadcn/ui",
-        "Cloudflare Workers"
+        "Cloudflare Workers",
+        "Azure Static Web Apps"
       ],
       "Links": [
         {
@@ -274,39 +300,6 @@
         "Networking"
       ],
       "Links": []
-    },
-    {
-      "Title": "PZ Server Manager",
-      "Tagline": "A web control panel for my game servers",
-      "DateStart": "2026-06-27T00:00:00.000Z",
-      "DateEnd": "2099-12-31T00:00:00.000Z",
-      "Description": "A Node and Express web app that runs beside a dedicated game server in Docker and gives them the management interface they never shipped with. It began as a throwaway, vibe-coded experiment to stop me SSHing into the host every time a server needed a restart or a mod, and turned into the tool I now run everything through. It discovers every server on the host, streams their logs, edits their configuration and tells me on my phone when something happens. Its growth is also what forced the engineering into it, the crash handling, the config validation and the notification plumbing all came from running the quick version for real and finding where it broke.",
-      "Highlights": [
-        "Single-page UI over a REST API, with dashboard, mods, players, logs and settings views, running as its own docker container alongside the game servers.",
-        "Live log view streamed over server-sent events straight from the container, with filtering, pause and severity colouring.",
-        "Mod installs driven through SteamCMD, including whole Steam Workshop collections resolved from the public collection endpoint, with download progress parsed out of the server log.",
-        "Servers are discovered by cross-referencing Docker bind mounts rather than being hardcoded, so a new server appears in the picker under its own live name with no config edit.",
-        "External notifcations for crashes, low disk, completed downloads and player join, leave, death and kick events, read from the game logs by byte offset so nothing replays after a restart.",
-        "Full configuration editor covering every key in the server ini, plus raw access to the sandbox Lua file rather than a fragile parser for it.",
-        "Debugged the parts that only break in production: a blocking child process that killed in-flight downloads on redeploy, and a request handler that silently fell back to the wrong server on a stale selection, etc."
-      ],
-      "Skills": [
-        "Node.js",
-        "Express",
-        "JavaScript",
-        "Docker",
-        "Claude",
-        "REST APIs",
-        "Server-Sent Events",
-        "Linux",
-        "AI Engineering"
-      ],
-      "Links": [
-        {
-          "Label": "Source on GitHub",
-          "Url": "https://github.com/JoshuaSHenderson/pz-server-manager"
-        }
-      ]
     }
   ],
   "SoftSkills": [
@@ -366,15 +359,60 @@
     },
     {
       "Application": "Containerization / Virtualization",
-      "Details": "Docker, ProxMox, VMware"
+      "Details": "Docker, ProxMox, VMware, Nutanix"
+    },
+    {
+      "Application": "Identity & Access",
+      "Details": "Entra ID, Active Directory, AAD Connect, Duo MFA / SSO, SSPR, LAPS, Group Policy"
+    },
+    {
+      "Application": "Microsoft 365",
+      "Details": "SharePoint Online, OneDrive, Exchange, Intune / Autopilot, Power Automate, licensing"
+    },
+    {
+      "Application": "Networking & Security",
+      "Details": "FortiGate, VLANs / segmentation, pfSense, Tailscale, SIEM, OpenCanary, vulnerability response"
     }
   ],
   "Education": {
     "School": "ITT Technical Institute",
+    "Location": "Tarentum, Pennsylvania",
     "GPA": "4.0",
     "Degree": "Associates Degree in Information Technology / Computer Network Systems",
-    "DateEnd": "2016-06-30T00:00:00.000Z"
+    "DateEnd": "2016-06-30T00:00:00.000Z",
+    "Honors": [
+      "Graduated with highest honors, straight As",
+      "National Technical Honor Society",
+      "Worked two jobs while studying, one of them full time"
+    ]
   },
+  "Certifications": [
+    {
+      "Name": "Microsoft Certified: Azure Fundamentals (AZ-900)",
+      "Issuer": "Microsoft",
+      "Date": "2026-10-07"
+    }
+  ],
+  "Downloads": [
+    {
+      "Name": "Resume",
+      "Path": "/Joshua-Henderson-Resume.pdf",
+      "Type": "Resume",
+      "Description": "The most up to date resume"
+    },
+    {
+      "Name": "Code Project Highlights",
+      "Path": "/Joshua-Henderson-Project-Highlights-Code.pdf",
+      "Type": "Projects",
+      "Description": "A brief white-paper on a few code projects I have worked on at previous posistions, and the skills I used to complete them."
+    },
+        {
+      "Name": "Administration Project Highlights",
+      "Path": "/Joshua-Henderson-Project-Highlights-Administration.pdf",
+      "Type": "Projects",
+          "Description": "A Brief white-paper on the administration projects I have worked on at previous posistions, and the skills I used to complete them."
+        }
+  ],
   "Recomendations": [
     {
       "Name": "Jake",

@@ -11,6 +11,8 @@ export interface IImportedData {
   SoftSkills: ISoftSkill[]
   HardSkills: IHardSkill[]
   Education: IEducation
+  Certifications: ICertification[]
+  Downloads: IDownloadableDocument[]
   Recomendations: IRecommendation[]
 }
 
@@ -73,6 +75,15 @@ export interface IEducation {
   Degree: string
   GPA: string
   DateEnd: string
+  Location?: string
+  Honors?: string[]
+}
+
+export interface ICertification {
+  Name: string
+  Issuer: string
+  Date: string
+  Url?: string
 }
 
 export interface IProject {
@@ -101,3 +112,12 @@ export interface IContact {
   Text: string
   Link: string
 }
+
+export interface IDownloadableDocument {
+  Name: string
+  Path: string
+  Type: DocumentType
+  Description?: string
+}
+
+type DocumentType = "Resume" | "Cover Letter" | "Projects" | "Other";

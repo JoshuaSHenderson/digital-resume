@@ -1,7 +1,7 @@
 import type { ReactNode } from "react"
-import { ArrowDown, Mail, MoveRight } from "lucide-react"
+import { ArrowDown, MoveRight } from "lucide-react"
 
-import { GithubMark } from "@/components/github-mark"
+import { ContactLinks, DownloadLinks } from "@/components/link-buttons"
 import { Reveal } from "@/components/reveal"
 import type { IImportedData, IRange } from "@/types/interfaces"
 
@@ -33,23 +33,13 @@ export function HeroSection({ data }: { data: IImportedData }) {
         </p>
       </Reveal>
       <Reveal delay={300}>
-        <div className="mt-8 flex flex-wrap gap-3">
-          <a
-            href={data.Contact.Email.Link}
-            className="inline-flex items-center gap-2 rounded-lg bg-primary px-5 py-2.5 text-sm font-medium text-primary-foreground transition hover:opacity-90"
-          >
-            <Mail className="size-4" />
-            Get in touch
-          </a>
-          <a
-            href={data.Contact.GitHub.Link}
-            target="_blank"
-            rel="noreferrer"
-            className="inline-flex items-center gap-2 rounded-lg border border-border px-5 py-2.5 text-sm font-medium transition hover:border-primary/50 hover:text-primary"
-          >
-            <GithubMark className="size-4" />
-            GitHub
-          </a>
+        <div className="mt-8">
+          <ContactLinks contact={data.Contact} />
+          {data.Downloads?.length > 0 && (
+            <div className="mt-3 border-t border-border pt-3">
+              <DownloadLinks downloads={data.Downloads} />
+            </div>
+          )}
         </div>
       </Reveal>
       <Reveal delay={400}>
